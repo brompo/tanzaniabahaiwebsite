@@ -136,7 +136,8 @@ table {
 }
 
 body {
-   background: #151719 url(../images/bg.png);
+   /*background: #25292D url(../images/bg.png);*/
+   background:#8e673e url(../images/bg.png);
 	font: 15px/30px opensans-regular, sans-serif;
 	color: #838C95;
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -154,15 +155,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 42px; line-height: 48px; margin-bottom: 12px;}
 h2 { font-size: 30px; line-height: 42px; margin-bottom: 6px; }
-h3 { font-size: 24px; line-height: 30px; margin-bottom: 12px; }
+h3 { font: 22px/30px montserrat-regular, sans-serif; line-height: 30px; }
 h4 { font-size: 21px; line-height: 30px; margin-bottom: 6px; }
 h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 .subheader { }
 
-p { margin: 0 0 24px 0; }
+p { margin: 0 0 24px 0; color:#565658; }
 p img { margin: 0; }
-p.lead { font: 20px/36px opensans-light, sans-serif; }
+p.lead { font: 20px/36px opensans-light, sans-serif; color:#565658;}
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems on some browsers*/
@@ -670,7 +671,8 @@ col.collapsed { padding: 0; }
 @media only screen and (max-width: 767px) {
 
    .row {
-	   width: 460px;
+	   /*width: 460px;*/
+    width:100%;
 	   margin: 0 auto;
       padding: 0;
 	}
@@ -752,3 +754,7 @@ col.collapsed { padding: 0; }
 
 
 
+
+.col.g-2.author-image {
+    padding-top: 10px;
+}

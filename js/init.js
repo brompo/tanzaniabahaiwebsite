@@ -18,7 +18,7 @@
 /*----------------------------------------------------*/
 /*	gmaps
 ------------------------------------------------------*/
-
+/*
    var map;
 
    // main directions
@@ -30,7 +30,7 @@
    // add address markers
    map.addMarker({ lat: 14.552891, lng: 121.051815, title: 'Eco Tower',
    infoWindow: { content: '<p>You can add your address 1 here</p>' } });
-
+*/
 /*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
@@ -59,7 +59,7 @@
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
+               $('#message-success').fadeIn();
             }
             // There was an error
             else {
@@ -78,11 +78,3 @@
 
 
 });
-
-
-
-
-
-
-
-

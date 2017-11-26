@@ -32,7 +32,7 @@
 
 .section-head h2 { font: 30px/42px montserrat-bold, sans-serif; }
 .desc { font: 14px/24px opensans-regular, sans-serif; }
-.intro { font: 20px/36px opensans-light, sans-serif; }
+.intro { font: 20px/36px opensans-light, sans-serif; color:#565658;}
 
 /* Left clearing for flexible columns - columns that changes width in
 different screen sizes. Makes columns with different heights align
@@ -93,7 +93,7 @@ header {
    left: 0;
 }
 header.static {
-   background: #232629;
+  /* background: #232629;*/
    position: static;
 }
 
@@ -108,8 +108,8 @@ header .logo a {
    display: block;
    padding: 0;
    margin: 0;
-   height: 18px;
-   width: 91px;
+   /*height: 18px;
+   width: 91px;*/
    line-height: 18px;
 
    position: absolute;
@@ -151,7 +151,8 @@ ul#nav li {
    display: inline-block;
 }
 ul#nav > li.active a {
-   background: #11ABB0;
+   /*background: #11ABB0;*/
+   background:#8E673E;
    color: #fff !important;
 }
 
@@ -186,6 +187,7 @@ ul#nav li.active a { color: #11ABB0; }
 #intro {
    background: #111 url(../images/intro-bg.jpg) no-repeat center;
    overflow: hidden;
+   margin-top: 55px;
 }
 
 /* FlexSlider Intro Slider Styles */
@@ -310,12 +312,12 @@ ul#nav li.active a { color: #11ABB0; }
 
 #portfolio {
    background: #f5f5f5 url(../images/patterns/grey.png);
-   padding-top: 156px;
-   padding-bottom: 120px;
+   padding-top: 50px;
+   padding-bottom: 50px;
 }
-#portfolio .section-head h2 { color: #0f9095; }
+#portfolio .section-head h2 { /*color: #0f9095;*/ color:#323233;}
 #portfolio .section-head p.desc { color: #999999; }
-#portfolio .section-head .intro { color: #A3A3A3; }
+#portfolio .section-head .intro { /*color: #A3A3A3;*/ color:#565658; }
 
 /* Portfolio Content */
 #portfolio-wrapper { margin-top: 36px; }
@@ -424,16 +426,17 @@ ul#nav li.active a { color: #11ABB0; }
 /* ================================================================== */
 
 #journal {
-   background-color: #0f9095;
+   /*background-color: #0f9095;*/
+   background: #f5f5f5 url(../images/patterns/grey.png);
    padding-top: 156px;
    padding-bottom: 120px;
    color: #7fe6ed;
 }
 
-#journal a, #journal a:visited  { color: #fff; }
+#journal a, #journal a:visited  { color: #b7b0ab; }
 #journal a:hover, #journal a:focus { color: #005757; }
 
-#journal .section-head h2 { color: #fff; }
+#journal .section-head h2 { color: #A3A3A4; }
 #journal .section-head p.desc,
 #journal .section-head .intro { color: #C2F1F5; }
 
@@ -465,7 +468,7 @@ ul#nav li.active a { color: #11ABB0; }
 /* post meta */
 #journal .entry .post-meta   {
    font: 14px/24px opensans-regular, sans-serif;
-   color: #fff;
+   color: #A3A3A4;
    margin-top: 12px;
    margin-bottom: 0;
 }
@@ -502,8 +505,10 @@ ul#nav li.active a { color: #11ABB0; }
 
 #about {
    background: #fff url(../images/patterns/grey.png);
-   padding-top: 156px;
-   padding-bottom: 144px;
+   padding-top: 0;
+   padding-bottom: 50px;
+   text-align: center;
+   font-style:italic;
    color: #A3A3A3;
 }
 #about .section-head h2,
@@ -652,8 +657,8 @@ ul#nav li.active a { color: #11ABB0; }
 
 #contact {
    background-color: #25292D;
-   padding-top: 108px;
-   padding-bottom: 120px;
+   padding-top: 50px;
+   /*padding-bottom: 120px;*/
    color: #707B89;
 }
 
@@ -762,8 +767,9 @@ ul#nav li.active a { color: #11ABB0; }
 
 .post {
    background: #f5f5f5 url(../images/patterns/grey.png);
-   padding-top: 120px;
+   /*padding-top: 120px;*/
    padding-bottom: 90px;
+   margin-top:55px;
 }
 .post .entry-header {
    position: relative;
@@ -811,14 +817,14 @@ ul#nav li.active a { color: #11ABB0; }
 
 /* post image */
 .post .post-image {
-  margin: 24px 0 36px 0;
+  margin: 24px 0 24px 0;
   width: 100%;
 }
 
 /* post content */
 .post .post-content {
    margin-bottom: 24px;
-   width: 75%;
+   /*width: 75%;*/
 }
 
 /* tags */
@@ -1142,9 +1148,10 @@ ol.commentlist {
 /* ================================================================== */
 
 footer {
-   margin-top: 30px;
-   margin-bottom: 30px;
+   padding-top: 30px;
+   padding-bottom: 30px;
    color: #303030;
+   background:#25292D;
    font-size: 14px;
 }
 footer a, footer a:visited { color: #0B686B; }
@@ -1204,7 +1211,7 @@ footer .social-links li:first-child { margin-left: 0; }
 
    /* adjust sections padding top */
    #services, #portfolio,
-   #journal, #about { padding-top: 120px; }
+   #journal, #about { padding-top: 50px; }
 
    /* adjust font size */
    .intro, .testimonies .client-cite { font-size: 18px; }
@@ -1257,11 +1264,12 @@ footer .social-links li:first-child { margin-left: 0; }
 
    /* blog
    -------------------------------------------------------------------- */
-   .post, #blog-entries .post { padding-top: 96px; }
+   .post, #blog-entries .post { padding-top: 10px; margin-top: 55px;}
    .post p.lead, #blog-entries .post .post-content p { font-size: 18px; }
    .post .entry-header h1 {
       padding-right: 18px;
       font-size: 43px;
+
    }
    .post .post-meta { margin-top: 6px; }
    .post .post-image { margin: 12px 0 24px 0 }
@@ -1279,14 +1287,14 @@ footer .social-links li:first-child { margin-left: 0; }
    /* center align some text */
    .section-head, .intro, #about h3,
    #journal .entry-header {
-      text-align: center;
+    /*  text-align: center;*/
    }
 
 
    /* mobile navigation
    -------------------------------------------------------------------- */
 
-   header.mobile { height: 66px; }
+   header.mobile { height: 55px; }
    header.mobile .logo a { top: 22px; }
 
    .mobile #nav-wrap {
@@ -1300,7 +1308,8 @@ footer .social-links li:first-child { margin-left: 0; }
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #11ABB0;
+		/*background-color: #11ABB0;*/
+  background-color:#8E673E;
 		position: relative;
       border: none;
       float: right;
@@ -1463,13 +1472,14 @@ footer .social-links li:first-child { margin-left: 0; }
 
    /* Blog Post
    ------------------------------------------------------------------ */
-   .post, #blog-entries .post { padding-top: 84px; }
+   .post, #blog-entries .post { padding-top: 10px; }
    .post .entry-header h1 {
       float: none;
 	   width: 100%;
       font-size: 32px;
       line-height: 42px;
       text-align: center;
+      margin-top:55px;
    }
    .post .post-meta {
       float: none;
@@ -1607,3 +1617,20 @@ footer .social-links li:first-child { margin-left: 0; }
 
 
 
+.quote{
+ font-style: italic !important;
+ font-weight: bolder;
+    /*color: #43acb0;*/
+    color:#75421A;
+}
+.manifestation{
+ font-weight: bold;
+ font-size:18px;
+ font-style: normal;
+}
+.sub-entry-title{
+ padding:0px;
+}
+.quotecolumn{
+ text-align: center;
+}

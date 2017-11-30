@@ -1634,3 +1634,7 @@ footer .social-links li:first-child { margin-left: 0; }
 .quotecolumn{
  text-align: center;
 }
+
+header.mobile-static{
+ position: absolute !important;
+}

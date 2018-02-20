@@ -1637,3 +1637,9 @@ header.mobile-static{
 .paragraph-bold{
  font-weight: bolder;
 }
+
+
+.inlinequote{
+ font-style: italic;
+ font-weight: bolder;
+}
